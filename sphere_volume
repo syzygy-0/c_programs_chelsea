@@ -1,0 +1,18 @@
+/*Enter the radius of a sphere in meters
+this program will calculate the volume*/
+
+#include <stdio.h>
+#define PI 3.14f
+
+int main(void)
+{
+        float radius, volume;
+
+        printf("Enter the radius of a sphere in meters: ");
+        scanf("%f", &radius);
+        volume = (3.0f / 4.0f) * PI * (radius * radius * radius);
+        printf("The volume of the sphere is %.2f", volume);
+        printf(" cubic meters.\n");
+
+        return 0;
+}
