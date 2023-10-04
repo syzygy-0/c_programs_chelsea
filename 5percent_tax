@@ -1,0 +1,16 @@
+/*This program adds a 5% tax to a dollar amount*/
+
+#include <stdio.h>
+#define TAX 0.05f
+
+int main(void)
+{
+        float amount, tax_amount, total;
+
+        printf("Enter an amount in dollars: ");
+        scanf("%f", &amount);
+        tax_amount = amount * TAX;
+        total = amount + tax_amount;
+        printf("The total with tax is %.2f\n", total);
+        return 0;
+}
